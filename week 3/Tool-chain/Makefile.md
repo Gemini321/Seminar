@@ -88,13 +88,13 @@ display.o: display.c stdio.h
 
 After:
 display.o: stdio.h
-(display.c is recognized as the dependent file of display.p automatically, so it's left out)
+(display.c is recognized as the dependent file of display.o automatically, so it's left out)
 ```
 
 4. Commands should follow a \[Tab\]
 5. Comments should follow a #
 6. Clean: We should always write a clean command at the end of makefile. It can help us clean all the object files and executing files conveniently. Remember to "make clean".
-7. .PHONY: Fake target (e.g. .PHONY: clean tells you that clean is a label rather than a target, so it will not be made)
+7. .PHONY: Fake target (e.g. .PHONY: clean tells that clean is a label rather than a target, so it will not be made)
 8. Commands:
 
 | Command |          -l          |        -I        |         -c          |          -o          |          -E           |        -S        |
